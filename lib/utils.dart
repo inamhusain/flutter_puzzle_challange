@@ -2,6 +2,14 @@
 
 import 'package:flutter/material.dart';
 
+class Utils {
+  static ratioSize(context, size) {
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
+    return (height / 100 * width / 100) / 10 * size;
+  }
+}
+
 class AppColors {
   static Color purple = Color(0xff7C80EE);
   static Color lightPurple = Color(0XFFede8f9);
